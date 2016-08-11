@@ -60,8 +60,6 @@ def last_element(tuples):
     return tuples[-1]
 
 def sort_last(tuples):
-    def last_element(tuples):
-        return tuples[-1]
     new_list = sorted(tuples, key=last_element)
     return new_list
 

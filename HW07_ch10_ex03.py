@@ -16,7 +16,14 @@ def cumulative_sum(list_of_int):
     return new_list
 
 def main():
-    print(cumulative_sum([1, 2, 3, 4, 5]))
+    list_1 = [1, 2, 3]
+    list_2 = [1, 3, 6]
+    list_3 = [1]
+    list_4 = [0, 0, 0, 1]
+    print(cumulative_sum(list_1))  # [1, 3, 6]
+    print(cumulative_sum(list_2))  # [1, 4, 10]
+    print(cumulative_sum(list_3))  # [1]
+    print(cumulative_sum(list_4))  # [0, 0, 0, 1]
 
 if __name__ == '__main__':
     main()
